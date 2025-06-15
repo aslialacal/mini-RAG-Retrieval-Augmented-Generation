@@ -1,0 +1,38 @@
+# Objective
+The goal of this work was to replicate and modify an existing Azure-based Retrieval-Augmented Generation (RAG) web app, replacing Azure components with:
+
+Qdrant as the vector database
+
+Llamafile (Phi-2) as the local LLM
+
+FastAPI as the backend interface
+
+# Successfully Completed sections
+Downloaded and started the Llamafile (Phi-2) locally
+
+Embedded documents using SentenceTransformers and uploaded to Qdrant from a Jupyter notebook
+
+Created and tested a mini-RAG-Retrieval-Augmented-Generation.ipynb notebook using the Top Rated Wines dataset
+
+Setup initial main.py using FastAPI and modified structure to replace Azure components (partial success)
+
+# Issues & Limitations Faced
+
+Qdrant connection failure: Error [WinError 10061] indicates the Qdrant server wasn't running or was unreachable.
+
+FastAPI runtime errors:
+
+uvicorn not recognized initially (fixed by installing uvicorn)
+
+.env configuration conflicts due to switching from Azure to local components
+
+No working /ask endpoint due to incomplete backend integration with local LLM
+
+# Summary
+Although the full web API with Qdrant + Llamafile backend was not completed, this repo:
+
+Successfully demonstrates document embedding and vector store upload via Qdrant
+
+Provides a foundation for building a FastAPI-based RAG API using local models
+
+Highlights the complexity in migrating cloud-based architectures to local-first RAG pipelines
