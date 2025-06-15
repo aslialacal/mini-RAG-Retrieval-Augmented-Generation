@@ -44,6 +44,15 @@ Load and preprocess the wine data
 Create embeddings and populate Qdrant
 Query wine recommendations
 
+
+# Experimental Web API Attempt
+
+You can find the partially working web application (FastAPI + Qdrant + Llamafile) in the "rag_webapp_attempt" folder.
+
+This version ran into local deployment issues, and a summary of what worked and what didn’t is documented in "notes.txt".
+
+
+
 Made with ❤️ as part of my learning in applied machine learning.
 
 
